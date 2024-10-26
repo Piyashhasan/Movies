@@ -1,0 +1,37 @@
+// --- movie carousel ---
+.movie-carousel {
+  // make space between two product card
+  .slick-track {
+    .slick-slide {
+      padding: 0 10px;
+    }
+  }
+
+  // next preview button hide
+  .slick-prev {
+    left: 20px;
+    z-index: 100;
+  }
+  .slick-next {
+    right: 20px;
+    z-index: 100;
+  }
+
+  // bottom active dot hide
+  .slick-dots {
+    display: none !important;
+  }
+}
+
+// --- movie rating ---
+.circleRating {
+  background-color: #fff;
+
+  .CircularProgressbar {
+    .CircularProgressbar-text {
+      fill: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+}

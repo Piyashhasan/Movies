@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Josefin_Sans, Inter } from "next/font/google";
 import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
 import "primereact/resources/primereact.min.css"; //core css
 import "primeicons/primeicons.css";
 import "./globals.css";
 import "../styles/app.scss";
 
-const josefin = Josefin_Sans({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Movie - Home",
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={josefin.className}>
+      <body suppressHydrationWarning={true} className={inter.className}>
         {children}
       </body>
     </html>
